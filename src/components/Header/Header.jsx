@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <header
-      className={`bg-dg-bkground sticky top-0 z-[20] mx-auto flex w-full items-center justify-between border-b p-2 border-gray-300 flex-wrap bg-slate-300 ${
+      className={` sticky top-0 z-[20] flex items-center justify-between border-b border-gray-300 flex-wrap bg-blue-900 py-4 ${
         isSticky && "bg-slate-200"
       }`}
     >
