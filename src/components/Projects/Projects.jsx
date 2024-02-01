@@ -2,7 +2,7 @@ import Card from "./Card";
 
 function Projects() {
   return (
-    <div>
+    <div id="projects">
       <h2 className="text-center">Projects</h2>
       <h3 className=" text-center text-xs">
         Come see what I have been building.

@@ -6,29 +6,30 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FaHammer } from "react-icons/fa";
 import { AiOutlineFileText } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
+import ScrollLink from "./ScrollLink";
 
 function Navlinks() {
   return (
     <>
-      <p to="/" className="flex items-center gap-1 text-base text-white">
+      <ScrollLink to="home">
         <AiTwotoneHome size="1em" color="white" /> Home
-      </p>
-      <p to="about" className="flex items-center gap-1 text-base text-white">
+      </ScrollLink>
+      <ScrollLink to="about">
         <AiOutlineUser size="1em" color="white" />
         About
-      </p>
-      <p to="projects" className="flex items-center gap-1 text-base text-white">
+      </ScrollLink>
+      <ScrollLink to="projects">
         {" "}
         <FaHammer size="1em" color="white" />
         Projects
-      </p>
-      <p to="resume" className="flex items-center gap-1 text-base text-white">
+      </ScrollLink>
+      <ScrollLink to="resume">
         <AiOutlineFileText size="1em" color="white" />
         Resume
-      </p>
-      <p to="contact" className="flex items-center gap-1 text-base text-white ">
+      </ScrollLink>
+      <ScrollLink to="contact">
         <AiOutlineMail size="1em" color="white" /> Contact
-      </p>
+      </ScrollLink>
     </>
   );
 }
