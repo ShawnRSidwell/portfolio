@@ -26,5 +26,32 @@
     background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100);
+
+.active {
+  text-decoration: underline !important;
+  text-decoration-color: red !important;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

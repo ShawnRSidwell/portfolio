@@ -13,12 +13,12 @@ function Header() {
 
   return (
     <header
-      className={` sticky top-0 z-[20] flex items-center justify-between border-b border-gray-300 flex-wrap bg-blue-900 py-4 ${
-        isSticky && "bg-slate-200"
+      className={` sticky top-0 z-[20] flex items-center justify-between border-b border-gray-300 flex-wrap bg-blue-900 py-4 px-3 transition-all duration-700  ${
+        isSticky && "bg-slate-200/90 "
       }`}
     >
-      <Logo />
-      <Nav />
+      <Logo isSticky={isSticky} />
+      <Nav isSticky={isSticky} />
     </header>
   );
 }

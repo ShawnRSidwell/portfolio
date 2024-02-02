@@ -1,35 +1,17 @@
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
-import { AiTwotoneHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { FaHammer } from "react-icons/fa";
-import { AiOutlineFileText } from "react-icons/ai";
-import { AiOutlineMail } from "react-icons/ai";
+
 import ScrollLink from "./ScrollLink";
 
 function Navlinks() {
   return (
     <>
-      <ScrollLink to="home">
-        <AiTwotoneHome size="1em" color="white" /> Home
-      </ScrollLink>
-      <ScrollLink to="about">
-        <AiOutlineUser size="1em" color="white" />
-        About
-      </ScrollLink>
-      <ScrollLink to="projects">
-        {" "}
-        <FaHammer size="1em" color="white" />
-        Projects
-      </ScrollLink>
-      <ScrollLink to="resume">
-        <AiOutlineFileText size="1em" color="white" />
-        Resume
-      </ScrollLink>
-      <ScrollLink to="contact">
-        <AiOutlineMail size="1em" color="white" /> Contact
-      </ScrollLink>
+      <ScrollLink to="home">Home</ScrollLink>
+      <ScrollLink to="about">About</ScrollLink>
+      <ScrollLink to="projects">Projects</ScrollLink>
+      <ScrollLink to="resume">Resume</ScrollLink>
+      <ScrollLink to="contact"> Contact</ScrollLink>
     </>
   );
 }

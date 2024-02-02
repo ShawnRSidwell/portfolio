@@ -1,7 +1,7 @@
 import Table from "./Table";
 function About() {
   return (
-    <div className="py-8">
+    <div id="about" className="py-8">
       <h2 className="text-lg font-bold text-center p-4">About</h2>
       <p className="text-center p-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vel,
