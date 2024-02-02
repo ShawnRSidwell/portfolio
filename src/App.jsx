@@ -5,11 +5,14 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
+import { HeaderProvider } from "./contexts/HeaderContext";
 
 function App() {
   return (
     <>
-      <Header />
+      <HeaderProvider>
+        <Header />
+      </HeaderProvider>
       <Home />
       <About />
       <Projects />

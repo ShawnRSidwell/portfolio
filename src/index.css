@@ -28,14 +28,34 @@
 }
 
 .active {
-  text-decoration: underline !important;
-  text-decoration-color: red !important;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom left;
+  animation: underlineExpand 0.25s ease-out forwards;
+}
+
+@keyframes underlineExpand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
 }
 
 .hover-underline-animation::after {

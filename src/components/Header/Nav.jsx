@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -17,8 +17,20 @@ function Navlinks() {
 }
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleNavbar = () => setIsOpen(!isOpen);
 
+  function toggleNavbar() {
+    setIsOpen(!isOpen);
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsOpen(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  });
   return (
     <>
       <nav className={`w-1/3 flex justify-end`}>
