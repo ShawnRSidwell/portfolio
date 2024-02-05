@@ -31,7 +31,7 @@ function About() {
           <img className="p-5" src={idCard} alt="" />
         </div>
       </div>
-      <div className="grid grid-rows-3 text-xl  p-5">
+      <div className="grid grid-rows-3 justify-center text-xl  p-5">
         <Table header="Languages" />
         <Table header="Frameworks and Libraries" />
         <Table header="Technology" />

@@ -14,7 +14,7 @@ function Table({ header }) {
 
 function TableRow({ data }) {
   return (
-    <tr className="flex flex-wrap gap-3 justify-center m-6">
+    <tr className="flex flex-wrap gap-2 justify-center m-6">
       {data.map((item, i) => (
         <TableCell key={i}>
           <Icon icon={item.icon} size={45} />
