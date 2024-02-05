@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header
-      className={` sticky top-0 z-[20] flex items-center justify-between border-b flex-wrap  py-4 px-3 transition-all duration-500 ${
+      className={` sticky top-0 z-[20] flex items-center justify-between border-b flex-wrap  py-4 px-44 transition-all duration-500 ${
         isSticky
           ? "bg-slate-200/90 bg-border-slate-100"
           : "bg-blue-900 border-blue-300"
