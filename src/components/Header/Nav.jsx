@@ -33,7 +33,7 @@ function Nav() {
   });
   return (
     <>
-      <nav className={`w-1/3 flex justify-end`}>
+      <nav className={`w-1/4 flex justify-end`}>
         <div className="hidden w-full md:flex justify-between gap-2">
           <Navlinks />
         </div>
