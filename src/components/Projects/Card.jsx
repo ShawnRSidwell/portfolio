@@ -1,11 +1,11 @@
-import computer from "../../assets/modern-computer-monitor-icon-isolated.jpg";
+import computer from "../../assets/laptop.png";
 import Button from "../Button";
 import { FaGithub, FaPlay } from "react-icons/fa";
 
 function Card() {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img className="w-full j" src={computer} alt="computer" />
+    <div className="mx-auto size-1/2 rounded overflow-hidden">
+      <img className="w-full size" src={computer} alt="computer" />
       <div className="px-6 py-4">
         <div className="font-bold text-base mb-2 text-center">
           The Coldest Sunset

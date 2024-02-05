@@ -15,11 +15,4 @@ export const data = [
   { name: "javascript", icon: RiJavascriptFill },
   { name: "java", icon: FaJava },
   { name: "html", icon: ImHtmlFive },
-  { name: "javascript", icon: RiJavascriptFill },
-  { name: "java", icon: FaJava },
-  { name: "html", icon: ImHtmlFive },
-  { name: "javascript", icon: RiJavascriptFill },
-  { name: "java", icon: FaJava },
-  { name: "java", icon: FaJava },
-  { name: "java", icon: FaJava },
 ];
