@@ -1,38 +1,36 @@
 import Card from "./Card";
 import project from "../../assets/project-gif.gif";
-import kanbanboard from "../../assets/kanbanboard.png";
+import kanbanboard from "../../assets/kanbanboardcropped.png";
 import Button from "../Button";
 import { FaGithub, FaPlay } from "react-icons/fa";
 
 function Projects() {
   return (
-    <div id="projects" className="py-10 my-10 p-6  ">
-      <div className="flex mx-auto bg-blue-200 rounded-lg p-10 border-blue-900 border-4 shadow-lg">
+    <div id="projects" className="p-6">
+      <div className="flex mx-auto bg-blue-200 rounded-lg border-blue-900 border-4 shadow-lg">
         <div className="flex flex-col">
-          <h2 className="text-center text-4xl font-bold mt-7 mx-auto">
-            Projects
-          </h2>
+          <h2 className="text-center text-4xl font-bold mt-7 ml-4">Projects</h2>
           <img
             src={kanbanboard}
             alt="kanban board"
-            className="w-1/2 rounded-lg mx-auto my-5 border-4 border-blue-900"
+            className="w-1/2 rounded-lg mx-auto my-5 border-2 border-blue-900 shadow-md"
           />
           <p className="py-5 px-10 mx-12  text-center ">
             My projects makes use of vast variety of latest technology tools. My
             best experience is to create Data Science projects and deploy them
             to web applications using cloud infrastructure.
           </p>
-          <div className="flex flex-col justify-center">
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg m-3 justify-center">
+          <div className="flex flex-col justify-center mb-5">
+            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
               Frugal Fare
             </div>
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg m-3">
+            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
               Frugal Fare
             </div>
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg m-3">
+            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
               Frugal Fare
             </div>
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg m-3">
+            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
               Frugal Fare
             </div>
           </div>
