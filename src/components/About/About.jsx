@@ -27,8 +27,8 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="bg-blue-100 rounded-full flex items-center justify-center shadow-lg	my-11">
-          <img className="p-5" src={idCard} alt="" />
+        <div className="bg-blue-100 rounded-full flex items-center justify-center shadow-lg	my-11 mx-7">
+          <img className="p-5 ml" src={idCard} alt="" />
         </div>
       </div>
       <div className="grid grid-rows-3 justify-center text-xl  p-5">
