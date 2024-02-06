@@ -2,7 +2,7 @@ import Table from "./Table";
 import idCard from "../../assets/id-card.png";
 function About() {
   return (
-    <div id="about">
+    <div id="about" className="my-12">
       <div className="flex flex-row-reverse">
         <div className="flex flex-col p-5 gap-5 mx-7">
           <h2 className="text-4xl font-bold text-center p-5">

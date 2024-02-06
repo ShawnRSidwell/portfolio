@@ -6,13 +6,13 @@ function Home() {
   return (
     <section
       id="home"
-      className="flex justify-center items-center mx-auto my-24"
+      className="flex justify-center items-center mx-auto mb-10 pb-24"
     >
-      <div className="flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold py-5">
-          Hello, I'm Shawn Sidwell
+      <div>
+        <h2 className="text-4xl font-extrabold py-5 text-slate-500">
+          Hello, I'm <span className="text-blue-900 ">Shawn Sidwell</span>
         </h2>
-        <p className="mr-5	text-lg">
+        <p className="text-xl text-slate-600">
           A passionate individual who always thrives to work on end to end
           products which develop sustainable and scalable social and technical
           systems to create impact.

@@ -13,7 +13,7 @@ function App() {
       <HeaderProvider>
         <Header />
       </HeaderProvider>
-      <div className="mx-auto max-w-7xl my-5 py-5 ">
+      <div className="mx-auto max-w-7xl my-5">
         <Home />
         <About />
         <Projects />
