@@ -1,7 +1,7 @@
 function Contact() {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <section className=" dark:bg-gray-900">
+      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-blue-300 rounded-md border-2 border-blue-900 shadow-lg">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           Contact Me
         </h2>
@@ -12,7 +12,7 @@ function Contact() {
         <form action="#" className="space-y-8">
           <div>
             <label
-              for="email"
+              htmlFor="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
               Your email
@@ -27,7 +27,7 @@ function Contact() {
           </div>
           <div>
             <label
-              for="subject"
+              htmlFor="subject"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
               Subject
@@ -42,7 +42,7 @@ function Contact() {
           </div>
           <div className="sm:col-span-2">
             <label
-              for="message"
+              htmlFor="message"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
             >
               Your message

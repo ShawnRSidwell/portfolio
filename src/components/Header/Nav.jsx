@@ -10,7 +10,7 @@ function Navlinks() {
       <ScrollLink to="home">Home</ScrollLink>
       <ScrollLink to="about">About</ScrollLink>
       <ScrollLink to="projects">Projects</ScrollLink>
-      <ScrollLink to="resume">Resume</ScrollLink>
+      <ScrollLink to="experience">Experience</ScrollLink>
       <ScrollLink to="contact"> Contact</ScrollLink>
     </>
   );

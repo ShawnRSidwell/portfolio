@@ -7,7 +7,7 @@ import { FaGithub, FaPlay } from "react-icons/fa";
 function Projects() {
   return (
     <div id="projects" className="py-10 my-10 p-6  ">
-      <div className="flex mx-auto bg-blue-200 rounded-lg p-10 border-blue-900 border-4 shadow-2xl">
+      <div className="flex mx-auto bg-blue-200 rounded-lg p-10 border-blue-900 border-4 shadow-lg">
         <div className="flex flex-col">
           <h2 className="text-center text-4xl font-bold mt-7 mx-auto">
             Projects
