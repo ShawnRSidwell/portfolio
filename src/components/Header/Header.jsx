@@ -14,11 +14,11 @@ function Header() {
 
   return (
     <header
-      className={` sticky top-0 z-[20] font-medium text-lg flex items-center justify-center  flex-wrap  py-6 px-24 transition-all duration-500 ${
+      className={` sticky top-0 z-[20] font-medium text-lg flex items-center justify-between  flex-wrap  py-6 px-12 transition-all duration-500 ${
         isSticky ? "bg-white shadow " : " bg-border-slate-100"
       }`}
     >
-      {/* <Logo /> */}
+      <Logo />
       <Nav />
     </header>
   );
