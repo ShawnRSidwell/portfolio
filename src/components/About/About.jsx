@@ -1,7 +1,6 @@
 import Table from "./Table";
 import profilePic from "../../assets/LinkedInPhoto Final.jpg";
 import { frameworks, languages, tech } from "./skills";
-import Card from "./Card";
 
 function About() {
   return (

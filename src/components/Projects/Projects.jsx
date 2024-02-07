@@ -1,6 +1,5 @@
 import kanbanboard from "../../assets/kanbanboardcropped.png";
 import Accordion from "./Accordion";
-import Card from "./Card";
 
 function Projects() {
   return (
@@ -21,20 +20,6 @@ function Projects() {
             to web applications using cloud infrastructure.
           </p>
           <Accordion />
-          {/* <div className="flex flex-col justify-center mb-5">
-            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold tracking-wider">
-              Frugal Fare
-            </div>
-            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
-              Frugal Fare
-            </div>
-            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
-              Frugal Fare
-            </div>
-            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
-              Frugal Fare
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
