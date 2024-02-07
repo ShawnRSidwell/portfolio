@@ -1,7 +1,7 @@
 import { useState } from "react";
 import portfoliopic from "../../assets/LinkedInPhoto Final.jpg";
 
-const projectList = [
+const jobs = [
   {
     employer: "Optum Health Care",
     jobTitle: "Software Developer",
@@ -84,25 +84,48 @@ const projectList = [
   },
 ];
 
-function AccordionItem({ curOpen, onOpen, num, title, img, children }) {
+function AccordionItem({
+  curOpen,
+  onOpen,
+  num,
+  employer,
+  jobTitle,
+  dates,
+  img,
+  children,
+}) {
   const isOpen = curOpen === num;
 
   function handleToggle() {
     onOpen(isOpen ? null : num);
   }
+
   return (
     <div
-      className={`shadow-sm  bg-white p-3 rounded-sm mx-8 my-3  text-center flex  flex-col items-center justify-center cursor-pointer hover:shadow-md  ${
-        isOpen ? "border-blue-900 border-t-4" : ""
-      }`}
       onClick={handleToggle}
+      className={`block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${
+        isOpen ? "h-auto" : "h-48 overflow-hidden"
+      } transition-height`}
     >
-      <p className={` text-blue-900 ${isOpen ? "font-bold" : "font-semibold"}`}>
-        {title}
-      </p>
-
-      <img className="size-1/3 p-5" src={img} alt="" />
-      {isOpen && <p className="text-slate-600">{children}</p>}
+      <img
+        className="w-24 h-24  rounded-full shadow-lg mx-auto"
+        src={img}
+        alt="profile picture"
+      />
+      <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        {employer}
+      </h5>
+      <h6 className="text-center tracking-tight text-gray-900 dark:text-white">
+        {jobTitle}
+      </h6>
+      {isOpen && (
+        <>
+          <h6 className="mb-2 text-center text-sm tracking-tight text-gray-900 dark:text-white">
+            {dates}
+          </h6>
+          <p className="text-sm text-gray-700 dark:text-gray-400">{children}</p>
+        </>
+      )}
     </div>
   );
 }
@@ -111,12 +134,14 @@ function Accordion() {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <div>
-      {projectList.map(({ title, img, description }, i) => (
+    <div className="grid grid-cols-2 gap-4">
+      {jobs.map(({ employer, jobTitle, dates, img, description }, i) => (
         <AccordionItem
-          key={title}
+          key={employer}
           num={i}
-          title={title}
+          employer={employer}
+          jobTitle={jobTitle}
+          dates={dates}
           img={img}
           curOpen={curOpen}
           onOpen={setCurOpen}
