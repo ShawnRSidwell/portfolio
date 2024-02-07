@@ -4,7 +4,9 @@ import Icon from "../Icon";
 function Table({ header }) {
   return (
     <div>
-      <h2 className="flex justify-center font-bold p-1">{header}</h2>
+      <h2 className="flex justify-center font-bold p-1 text-blue-900 capitalize">
+        {header}
+      </h2>
       <table>
         <TableRow data={skillData} />
       </table>

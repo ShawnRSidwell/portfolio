@@ -7,9 +7,11 @@ import { FaGithub, FaPlay } from "react-icons/fa";
 function Projects() {
   return (
     <div id="projects" className="p-6">
-      <div className="flex mx-auto bg-blue-200 rounded-lg border-blue-900 border-4 shadow-lg">
+      <div className="flex mx-auto bg-blue-100 rounded-lg border-blue-900 border-4 shadow-lg">
         <div className="flex flex-col">
-          <h2 className="text-center text-4xl font-bold mt-7 ml-4">Projects</h2>
+          <h2 className="text-center text-4xl font-bold mt-7 ml-4 text-blue-900">
+            Projects
+          </h2>
           <img
             src={kanbanboard}
             alt="kanban board"
@@ -21,16 +23,16 @@ function Projects() {
             to web applications using cloud infrastructure.
           </p>
           <div className="flex flex-col justify-center mb-5">
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
+            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
               Frugal Fare
             </div>
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
+            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
               Frugal Fare
             </div>
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
+            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
               Frugal Fare
             </div>
-            <div className="shadow-lg border-blue-900 bg-white border-4 p-3 rounded-lg mx-3 my-1">
+            <div className="shadow-lg border-blue-900 bg-blue-300 border-2 p-3 rounded-lg mx-3 my-1 text-blue-900 font-semibold">
               Frugal Fare
             </div>
           </div>

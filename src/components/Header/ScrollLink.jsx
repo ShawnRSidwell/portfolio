@@ -12,7 +12,7 @@ function ScrollLink({ to, children }) {
       offset={-70} // Adjust the offset based on your layout
     >
       <button
-        className={`hover-underline-animation ${
+        className={`hover-underline-animation tracking-wider ${
           isSticky ? "text-blue-900" : "text-white"
         }`}
       >

@@ -5,10 +5,10 @@ function About() {
     <div id="about" className="my-12">
       <div className="flex flex-row-reverse">
         <div className="flex flex-col p-5 gap-5 mx-7">
-          <h2 className="text-4xl font-bold text-center p-5">
-            Let me introduce myself!
+          <h2 className="text-4xl font-bold text-center p-5 text-slate-500 capitalize">
+            Allow me to <span className="text-blue-900">introduce</span> myself
           </h2>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 text-slate-700 font-semibold">
             <p className="">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
