@@ -133,6 +133,25 @@ function AccordionItem({
 function Accordion() {
   const [curOpen, setCurOpen] = useState(null);
 
+  if (curOpen !== null) {
+    const { employer, jobTitle, dates, img, description } = jobs[curOpen];
+    return (
+      <AccordionItem
+        key={employer}
+        num={curOpen}
+        employer={employer}
+        jobTitle={jobTitle}
+        dates={dates}
+        img={img}
+        curOpen={curOpen}
+        onOpen={setCurOpen}
+      >
+        {" "}
+        {description}
+      </AccordionItem>
+    );
+  }
+
   return (
     <div className="grid grid-cols-2 gap-4">
       {jobs.map(({ employer, jobTitle, dates, img, description }, i) => (
