@@ -1,12 +1,12 @@
 import kanbanboard from "../../assets/kanbanboardcropped.png";
-import Accordion from "./Accordion";
+import ReactiveButton from "reactive-button";
 
 function Projects() {
   return (
-    <div id="projects" className="p-6 max-w-screen-xl mx-auto">
-      <div className="flex mx-auto bg-blue-100 rounded-lg border-blue-900 border-2 shadow-lg">
+    <div id="projects" className=" max-w-screen-xl mx-auto mb-12 mt-4">
+      <div className="flex mx-auto">
         <div className="flex flex-col">
-          <h2 className="text-center text-4xl font-bold mt-7 ml-4 text-blue-900">
+          <h2 className="text-4xl font-extrabold tracking-wider text-center p-4 text-blue-900 uppercase">
             Projects
           </h2>
           <img
@@ -14,12 +14,37 @@ function Projects() {
             alt="kanban board"
             className="w-1/2 rounded-lg mx-auto my-5 border-2 border-blue-900 shadow-md"
           />
-          <p className="py-5 px-10 mx-12  text-center ">
+          <p className="p-6 mb-5 text-center text-slate-500 text-lg ">
             My projects makes use of vast variety of latest technology tools. My
             best experience is to create Data Science projects and deploy them
             to web applications using cloud infrastructure.
           </p>
-          <Accordion />
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Default
+            </button>
+            <button
+              type="button"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Default
+            </button>
+            <button
+              type="button"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Default
+            </button>
+            <button
+              type="button"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Default
+            </button>
+          </div>
         </div>
       </div>
     </div>

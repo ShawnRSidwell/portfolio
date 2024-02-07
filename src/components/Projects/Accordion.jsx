@@ -62,7 +62,7 @@ function Accordion() {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <div>
+    <div className="grid grid-cols-2">
       {projectList.map(({ title, img, description }, i) => (
         <AccordionItem
           key={title}
