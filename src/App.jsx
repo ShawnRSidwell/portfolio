@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
-import Experience from "./components/Resume/Experience";
+import Experience from "./components/Experience/Experience";
 import { HeaderProvider } from "./contexts/HeaderContext";
 
 function App() {
