@@ -6,10 +6,10 @@ function Home() {
   return (
     <section
       id="home"
-      className="flex justify-center items-center mx-auto mb-10 pb-24"
+      className="flex justify-center items-center  mb-10 pb-24 px-16 "
     >
-      <div>
-        <h2 className="text-4xl font-extrabold text-slate-400">
+      <div className="mx-5 p-5">
+        <h2 className="text-5xl font-extrabold text-slate-400">
           Hello, I'm <span className="text-blue-900 ">Shawn Sidwell</span>
         </h2>
         <Type />
@@ -19,7 +19,7 @@ function Home() {
           systems to create impact.
         </p>
       </div>
-      <img className="size-7/12 mt-5" src={codingGif} alt="icon" />
+      <img className="size-7/12 mt-5 p-5" src={codingGif} alt="icon" />
     </section>
   );
 }
