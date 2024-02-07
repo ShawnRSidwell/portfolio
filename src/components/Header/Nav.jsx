@@ -9,9 +9,16 @@ function Navlinks() {
     <>
       <ScrollLink to="home">Home</ScrollLink>
       <ScrollLink to="about">About</ScrollLink>
-      <ScrollLink to="projects">Projects</ScrollLink>
-      <ScrollLink to="experience">Experience</ScrollLink>
-      <ScrollLink to="contact"> Contact</ScrollLink>
+      <ScrollLink to="projects" offset={-100}>
+        Projects
+      </ScrollLink>
+      <ScrollLink to="experience" offset={-70}>
+        Experience
+      </ScrollLink>
+      <ScrollLink to="contact" offset={-120}>
+        {" "}
+        Contact
+      </ScrollLink>
     </>
   );
 }
