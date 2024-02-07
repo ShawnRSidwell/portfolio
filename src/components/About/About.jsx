@@ -1,5 +1,6 @@
 import Table from "./Table";
 import idCard from "../../assets/id-card.png";
+import { frameworks, languages, tech } from "./skills";
 function About() {
   return (
     <div id="about" className="my-12">
@@ -32,9 +33,9 @@ function About() {
         </div>
       </div>
       <div className="grid grid-rows-3 justify-center text-xl ">
-        <Table header="Languages" />
-        <Table header="Frameworks and Libraries" />
-        <Table header="Technology" />
+        <Table header="Languages" data={languages} />
+        <Table header="Frameworks and Libraries" data={frameworks} />
+        <Table header="Technology" data={tech} />
       </div>
     </div>
   );
