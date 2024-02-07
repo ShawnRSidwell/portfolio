@@ -13,7 +13,7 @@ function ScrollLink({ to, children }) {
     >
       <button
         className={`hover-underline-animation tracking-wider ${
-          isSticky ? "text-blue-900" : "text-white"
+          isSticky ? "text-blue-900" : "text-blue-900"
         }`}
       >
         {" "}

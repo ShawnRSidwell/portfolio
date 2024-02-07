@@ -5,7 +5,7 @@ function Logo() {
   return (
     <p
       className={`hover-underline-animation ${
-        isSticky ? "text-blue-900" : "text-white"
+        isSticky ? "text-blue-900" : "text-blue-900"
       }`}
     >
       Shawn Sidwell
