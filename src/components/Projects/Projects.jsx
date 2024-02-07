@@ -4,7 +4,7 @@ import Card from "./Card";
 
 function Projects() {
   return (
-    <div id="projects" className="p-6">
+    <div id="projects" className="p-6 max-w-screen-xl mx-auto">
       <div className="flex mx-auto bg-blue-100 rounded-lg border-blue-900 border-2 shadow-lg">
         <div className="flex flex-col">
           <h2 className="text-center text-4xl font-bold mt-7 ml-4 text-blue-900">
