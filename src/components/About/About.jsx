@@ -9,7 +9,7 @@ function About() {
           <h2 className="text-4xl font-bold text-center p-5 text-slate-500 capitalize">
             Allow me to <span className="text-blue-900">introduce</span> myself
           </h2>
-          <div className="flex flex-col gap-3 text-slate-700 font-semibold">
+          <div className="flex flex-col gap-3 text-slate-500 font-medium">
             <p className="">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
