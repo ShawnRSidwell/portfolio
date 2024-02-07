@@ -6,7 +6,7 @@ function Table({ header, data }) {
       <h2 className="flex justify-center font-bold p-1 text-blue-900 capitalize">
         {header}
       </h2>
-      <table>
+      <table className="flex justify-center ">
         <TableRow data={data} />
       </table>
     </div>
@@ -15,7 +15,7 @@ function Table({ header, data }) {
 
 function TableRow({ data }) {
   return (
-    <tr className="flex flex-wrap justify-center m-2">
+    <tr className="flex flex-wrap justify-center items-center m-2">
       {data.map((item, i) => (
         <TableCell key={i}>
           <Icon icon={item.icon} size={45} />
@@ -27,7 +27,7 @@ function TableRow({ data }) {
 
 function TableCell({ children }) {
   return (
-    <td className=" bg-white shadow hover:shadow-xl m-3 rounded-full p-3 flex items-center justify-center">
+    <td className=" flex justify-center items-center bg-white shadow hover:shadow-xl m-3 rounded-full p-3">
       {children}
     </td>
   );
