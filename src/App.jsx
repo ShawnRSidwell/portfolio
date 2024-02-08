@@ -13,13 +13,11 @@ function App() {
       <HeaderProvider>
         <Header />
       </HeaderProvider>
-      <div className="mx-auto my-8">
-        <Home />
-        <About />
-        <Projects />
-        <Experience />
-        <Contact />
-      </div>
+      <Home />
+      <About />
+      <Projects />
+      <Experience />
+      <Contact />
       <Footer />
     </>
   );
