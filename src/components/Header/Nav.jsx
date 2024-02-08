@@ -16,7 +16,6 @@ function Navlinks() {
         Experience
       </ScrollLink>
       <ScrollLink to="contact" offset={-120}>
-        {" "}
         Contact
       </ScrollLink>
     </>
@@ -47,15 +46,18 @@ function Nav() {
         <div className="md:hidden">
           <button onClick={toggleNavbar}>
             {isOpen ? (
-              <AiFillCloseCircle color="white" size="1.5em" />
+              <AiFillCloseCircle color="grey" size="1.5em" />
             ) : (
-              <AiOutlineMenu color="white" size="1.5em" />
+              <AiOutlineMenu color="grey" size="1.5em" />
             )}
           </button>
         </div>
       </nav>
       {isOpen && (
-        <div className="flex flex-col items-center basis-full">
+        <div
+          className="flex flex-col items-center basis-full"
+          onClick={toggleNavbar}
+        >
           <Navlinks />
         </div>
       )}
