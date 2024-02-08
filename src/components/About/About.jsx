@@ -7,14 +7,14 @@ function About() {
     <div id="about" className="my-12">
       <div className="flex flex-col items-center md:flex-row md:justify-center bg-gradient-to-r from-blue-500 from-10%  to-blue-900">
         <div className=" p-12">
-          <div className="flex justify-evenly items-center text-slate-500 font-medium bg-white rounded-xl p-6 m-5">
+          <div className="md:flex md:justify-evenly items-center text-slate-500 font-medium bg-white rounded-xl p-6 m-5">
             <img
-              className="rounded-full shadow-lg mx-auto h-96 w-96 object-cover ml-24 border-2 border-blue-900"
+              className="rounded-full shadow-lg mx-auto size-1/2 md:h-96 md:w-96 object-cover ml-24 border-2 border-blue-900"
               src={profilePic}
               alt="profile picture"
             />
 
-            <div className="mx-12">
+            <div className="m:mx-12">
               <h2 className="text-4xl font-extrabold tracking-wider text-center p-5 text-blue-900 uppercase">
                 About Me
               </h2>
