@@ -18,7 +18,7 @@ function Experience() {
           </button>
         </div>
       </div>
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl md:h-[40em]">
         <Accordion />
       </div>
     </div>
