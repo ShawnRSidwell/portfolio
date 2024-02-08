@@ -1,12 +1,15 @@
 import { useState } from "react";
-import portfoliopic from "../../assets/LinkedInPhoto Final.jpg";
+import optumLogo from "../../assets/optum-logo-ora-rgb1.svg";
+import tekSystemsLogo from "../../assets/teksystems-logo.png";
+import wellsfargoLogo from "../../assets/Wells_Fargo_Logo_(2020).svg.png";
+import jfqLogo from "../../assets/jfq-logo.jpg";
 
 const jobs = [
   {
     employer: "Optum Health Care",
     jobTitle: "Software Developer",
     dates: "Aug 2022 - October 2023",
-    img: portfoliopic,
+    img: optumLogo,
     description: `
     • Obtained through TekSystems bootcamp. Started as a contributor
     to a large ingestion/ETL (Extracting, Transforming, Loading)
@@ -26,7 +29,7 @@ const jobs = [
     employer: "Optum Health Care",
     jobTitle: "Software Developer",
     dates: "Aug 2022 - October 2023",
-    img: portfoliopic,
+    img: tekSystemsLogo,
     description: `
     • Obtained through TekSystems bootcamp. Started as a contributor
     to a large ingestion/ETL (Extracting, Transforming, Loading)
@@ -46,7 +49,7 @@ const jobs = [
     employer: "Optum Health Care",
     jobTitle: "Software Developer",
     dates: "Aug 2022 - October 2023",
-    img: portfoliopic,
+    img: wellsfargoLogo,
     description: `
     • Obtained through TekSystems bootcamp. Started as a contributor
     to a large ingestion/ETL (Extracting, Transforming, Loading)
@@ -66,7 +69,7 @@ const jobs = [
     employer: "Optum Health Care",
     jobTitle: "Software Developer",
     dates: "Aug 2022 - October 2023",
-    img: portfoliopic,
+    img: jfqLogo,
     description: `
     • Obtained through TekSystems bootcamp. Started as a contributor
     to a large ingestion/ETL (Extracting, Transforming, Loading)
@@ -106,9 +109,9 @@ function AccordionItem({
       className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700`}
     >
       <img
-        className="w-24 h-24  rounded-full shadow-lg mx-auto"
+        className="w-24 h-24 md:w-32 md:h-32 md:p-2 rounded-full shadow-lg mx-auto"
         src={img}
-        alt="profile picture"
+        alt="employer picture"
       />
       <h5 className="md:my-2 text-center text-xl md:text-2xl font-bold text-blue-900 dark:text-white ">
         {employer}
