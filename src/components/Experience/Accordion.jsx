@@ -103,14 +103,14 @@ function AccordionItem({
   return (
     <div
       onClick={handleToggle}
-      className={`block p-6 m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700`}
+      className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700`}
     >
       <img
         className="w-24 h-24  rounded-full shadow-lg mx-auto"
         src={img}
         alt="profile picture"
       />
-      <h5 className="my-2 text-center text-2xl font-bold text-blue-900 dark:text-white ">
+      <h5 className="md:my-2 text-center text-xl md:text-2xl font-bold text-blue-900 dark:text-white ">
         {employer}
       </h5>
       <h6 className="text-center tracking-tight text-slate-400 dark:text-white">
@@ -151,7 +151,7 @@ function Accordion() {
   }
 
   return (
-    <div className="grid grid-cols-2  mx-7 my-10">
+    <div className="grid grid-cols-2  md:mx-7 md:my-10">
       {jobs.map(({ employer, jobTitle, dates, img, description }, i) => (
         <AccordionItem
           key={employer}

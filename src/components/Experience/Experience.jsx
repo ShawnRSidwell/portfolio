@@ -1,16 +1,13 @@
-import Button from "../Button";
-import ResumeDocument from "./ResumeDocument";
-import profilepic from "../../assets/LinkedInPhoto Final.jpg";
 import Accordion from "./Accordion";
 
 function Experience() {
   return (
-    <div id="experience" className="p-9 mx-12 ">
+    <div id="experience" className="p-3  md:p-9 md:mx-12 ">
       <div>
-        <h1 className="text-4xl font-extrabold tracking-wider text-center p-4 text-blue-900 uppercase">
+        <h1 className="text-4xl font-extrabold tracking-wider text-center text-blue-900 uppercase">
           Experience
         </h1>
-        <p className="p-6 mb-5 text-center text-slate-500 text-lg ">
+        <p className="p-1 md:p-6 mb-5 text-center text-slate-500  md:text-lg ">
           My projects makes use of vast variety of latest technology tools. My
           best experience is to create Data Science projects and deploy them to
           web applications using cloud infrastructure.
