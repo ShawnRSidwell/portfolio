@@ -109,7 +109,7 @@ function AccordionItem({
       className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700`}
     >
       <img
-        className="w-24 h-24 md:w-32 md:h-32 md:p-2 rounded-full shadow-lg mx-auto"
+        className="w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg mx-auto"
         src={img}
         alt="employer picture"
       />
