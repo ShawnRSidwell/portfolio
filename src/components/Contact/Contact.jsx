@@ -3,10 +3,10 @@ function Contact() {
     <>
       <section
         id="contact"
-        className="bg-gradient-to-r from-blue-500 from-10%  to-blue-900 dark:bg-gray-900 py-24"
+        className="md:bg-gradient-to-r from-blue-500 from-10%  to-blue-900 dark:bg-gray-900 md:py-24"
       >
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-white rounded-md border-2 border-blue-900 shadow-lg">
-          <h2 className="text-4xl font-extrabold tracking-wider text-center p-5 text-blue-900 uppercase">
+        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-white rounded-md md:border-2 md:border-blue-900 shadow-lg">
+          <h2 className="text-xl md:text-4xl font-extrabold tracking-wider text-center p-5 text-blue-900 uppercase">
             Contact Me
           </h2>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
@@ -58,7 +58,6 @@ function Contact() {
               ></textarea>
             </div>
             <button className="bg-blue-600 rounded-full p-3 text-white">
-              {" "}
               Send message
             </button>
           </form>
