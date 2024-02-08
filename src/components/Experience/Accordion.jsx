@@ -1,5 +1,5 @@
 import { useState } from "react";
-import optumLogo from "../../assets/optum-logo-ora-rgb1.svg";
+import optumLogo from "../../assets/optum-logo.jpg";
 import tekSystemsLogo from "../../assets/teksystems-logo.png";
 import wellsfargoLogo from "../../assets/Wells_Fargo_Logo_(2020).svg.png";
 import jfqLogo from "../../assets/jfq-logo.jpg";
@@ -76,7 +76,7 @@ function AccordionItem({
   }
 
   return (
-    <div
+    <button
       onClick={handleToggle}
       className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700`}
     >
@@ -101,7 +101,7 @@ function AccordionItem({
           </p>
         </>
       )}
-    </div>
+    </button>
   );
 }
 
