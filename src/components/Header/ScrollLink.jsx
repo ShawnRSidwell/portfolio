@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { useHeader } from "../../contexts/HeaderContext";
 
-function ScrollLink({ to, offset = -200, children }) {
+function ScrollLink({ to, offset = -100, children }) {
   const { isSticky } = useHeader();
   return (
     <Link
