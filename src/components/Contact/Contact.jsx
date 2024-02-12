@@ -1,11 +1,13 @@
+import Button from "../Button";
+
 function Contact() {
   return (
     <>
       <section
         id="contact"
-        className="md:bg-gradient-to-r from-blue-500 from-10%  to-blue-900 dark:bg-gray-900 md:py-24"
+        className="md:bg-gradient-to-r from-blue-500 from-10%  to-blue-700 dark:bg-gray-900 md:py-24"
       >
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-white rounded-md md:border-2 md:border-blue-900 shadow-lg">
+        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-white rounded-md md:border-2 md:border-blue-900 shadow-xl">
           <h2 className="text-xl md:text-4xl font-extrabold tracking-wider text-center p-5 text-blue-900 uppercase">
             Contact Me
           </h2>
@@ -57,9 +59,7 @@ function Contact() {
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
-            <button className="bg-blue-600 rounded-full p-3 text-white">
-              Send message
-            </button>
+            <Button> Send Message</Button>
           </form>
         </div>
       </section>
