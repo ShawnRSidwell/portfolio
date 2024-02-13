@@ -1,6 +1,10 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
 
+const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const USER_ID = import.meta.env.VITE_EMAIL_USER_ID;
+
 function Contact() {
   const [formData, setFormData] = useState({
     email: "",
@@ -19,7 +23,8 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      // .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);

@@ -11,10 +11,14 @@ function Contact() {
           <h2 className="text-xl md:text-4xl font-extrabold tracking-wider text-center p-5 text-blue-900 uppercase">
             Contact Me
           </h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-            Feel free to connect with me
+          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl md:size-3/4 md:mx-auto">
+            Feel free to reach out for any inquiries or potential opportunities!
+            I&#39;m always open to connecting and discussing further. Whether
+            you have questions, ideas to share, or opportunities to explore,
+            I&#39;d love to hear from you. Let&#39;s connect and see how we can
+            collaborate!
           </p>
-          <form action="#" className="space-y-8">
+          <form action="#" className="space-y-8 md:px-20">
             <div>
               <label
                 htmlFor="email"
@@ -41,7 +45,7 @@ function Contact() {
                 type="text"
                 id="subject"
                 className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="Let us know how we can help you"
+                placeholder="How can I help?"
                 required
               />
             </div>
