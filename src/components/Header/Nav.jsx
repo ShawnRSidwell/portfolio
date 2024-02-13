@@ -17,7 +17,7 @@ function Navlinks() {
       <ScrollLink to="experience" offset={-70}>
         Experience
       </ScrollLink>
-      <ScrollLink to="contact" offset={-120}>
+      <ScrollLink to="contact" offset={-100}>
         Contact
       </ScrollLink>
     </>
