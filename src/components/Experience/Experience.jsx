@@ -1,6 +1,15 @@
+import Button from "../Button";
 import Accordion from "./Accordion";
+import resumeFile from "../../assets/Shawn Sidwell Resume 2024.pdf";
 
 function Experience() {
+  const handleDownload = () => {
+    const anchor = document.createElement("a");
+    anchor.href = resumeFile;
+    anchor.download = "Shawn Sidwell Resume.pdf";
+    anchor.click();
+  };
+
   return (
     <div id="experience" className="p-3  md:p-9 md:mx-12 ">
       <div>
@@ -14,9 +23,7 @@ function Experience() {
           blend of technical proficiency and business acumen to any position.
         </p>
         <div className="flex justify-center">
-          <button className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            Download Resume
-          </button>
+          <Button onClick={handleDownload}>Download Resume</Button>
         </div>
       </div>
       <div className="mx-auto max-w-3xl md:h-[40em]">
