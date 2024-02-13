@@ -18,13 +18,12 @@ function About() {
               <h2 className="text-xl md:text-4xl font-extrabold tracking-wider text-center p-2 md:p-5 text-blue-900 uppercase">
                 About Me
               </h2>
-              <div className="text-normal md:text-xl text-slate-500">
-                I fell in love with programming and I have at least learnt
-                something, I think… 🤷‍♂️ My field of interest includes building
-                new web technologies and products, as well as areas related to
-                blockchain. Whenever possible, I apply my passion for developing
-                products with Node.js and modern JavaScript libraries and
-                frameworks I am fluent in classics like C++, JavaScript, and Go.
+              <div className=" text-center text-normal md:mx-auto md:py-5 md:px-9 md:size-3/4 md:text-xl text-slate-500">
+                I live in Portland, Oregon and I am a huge dog lover with two
+                hounds at home. My favorite past times are hiking, traveling and
+                coding. I fell in love with programming and dove head first into
+                learning everything I could. I am a passionate individual who
+                puts their all into everything they do.
               </div>
               <div className="p-2 md:p-5">
                 <Table header="Languages" data={languages} />

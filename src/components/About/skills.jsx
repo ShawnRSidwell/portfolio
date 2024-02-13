@@ -1,18 +1,18 @@
 export const languages = [
   { name: "java", icon: DeviconJava },
-  { name: "javascript", icon: LogosJavascript },
+  { name: "javaScript", icon: LogosJavascript },
   { name: "python", icon: LogosPython },
-  { name: "html", icon: DeviconHtml5 },
-  { name: "css", icon: DeviconCss3 },
-  { name: "postgresql", icon: VscodeIconsFileTypePgsql },
-  { name: "mysql", icon: DeviconMysql },
+  { name: "HTML", icon: DeviconHtml5 },
+  { name: "CSS", icon: DeviconCss3 },
+  { name: "postgreSQL", icon: VscodeIconsFileTypePgsql },
+  { name: "mySQL", icon: DeviconMysql },
   { name: "cassandra", icon: DeviconCassandra },
 ];
 
 export const frameworks = [
   { name: "spring", icon: LogosSpringIcon },
   { name: "react", icon: LogosReact },
-  { name: "nodejs", icon: LogosNodejsIcon },
+  { name: "nodeJS", icon: LogosNodejsIcon },
   { name: "express", icon: SimpleIconsExpress },
   { name: "maven", icon: DeviconMaven },
   { name: "tailwind", icon: DeviconTailwindcss },
@@ -24,7 +24,7 @@ export const tech = [
   { name: "kubernetes", icon: DeviconKubernetes },
   { name: "kafka", icon: LogosKafkaIcon },
   { name: "jenkins", icon: DeviconJenkins },
-  { name: "elasticsearch", icon: LogosElasticsearch },
+  { name: "elasticSearch", icon: LogosElasticsearch },
   { name: "gradle", icon: LogosGradle },
 ];
 
