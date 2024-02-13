@@ -1,11 +1,12 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
+import Button from "../Button";
 
 const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
 const USER_ID = import.meta.env.VITE_EMAIL_USER_ID;
 
-function Contact() {
+function Email() {
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -29,7 +30,6 @@ function Contact() {
         (result) => {
           console.log("Email sent successfully:", result.text);
           alert("Email sent successfully!");
-          // Optionally, reset the form fields
           setFormData({
             email: "",
             subject: "",
@@ -46,10 +46,16 @@ function Contact() {
   return (
     <section>
       <div>
-        <form onSubmit={handleSubmit} className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8 md:px-20">
           <div>
-            <label htmlFor="email">Your email</label>
+            <label
+              htmlFor="email"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Your email
+            </label>
             <input
+              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               type="email"
               id="email"
               name="email"
@@ -59,8 +65,14 @@ function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="subject">Subject</label>
+            <label
+              htmlFor="subject"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Subject
+            </label>
             <input
+              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               type="text"
               id="subject"
               name="subject"
@@ -69,9 +81,15 @@ function Contact() {
               required
             />
           </div>
-          <div>
-            <label htmlFor="message">Your message</label>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="message"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+            >
+              Your message
+            </label>
             <textarea
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               id="message"
               name="message"
               value={formData.message}
@@ -80,11 +98,11 @@ function Contact() {
               required
             />
           </div>
-          <button type="submit">Send message</button>
+          <Button type={"submit"}>Send message</Button>
         </form>
       </div>
     </section>
   );
 }
 
-export default Contact;
+export default Email;
