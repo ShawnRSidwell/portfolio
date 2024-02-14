@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ShawnRSidwell.github.io",
+  "homepage": "https://shawnrsidwell.github.io/portfolio-spa/",
   "type": "module",
   "scripts": {
     "dev": "vite",
