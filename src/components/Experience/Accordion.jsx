@@ -78,27 +78,23 @@ function AccordionItem({
   return (
     <button
       onClick={handleToggle}
-      className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700`}
+      className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 `}
     >
       <img
         className="w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg mx-auto"
         src={img}
         alt="employer picture"
       />
-      <h5 className="md:my-2 text-center text-xl md:text-2xl font-bold text-blue-900 dark:text-white ">
+      <h5 className="md:my-2 text-center text-xl md:text-2xl font-bold text-blue-900 ">
         {employer}
       </h5>
-      <h6 className="text-center tracking-tight text-slate-400 dark:text-white">
-        {jobTitle}
-      </h6>
+      <h6 className="text-center tracking-tight text-slate-400 ">{jobTitle}</h6>
       {isOpen && (
         <>
-          <h6 className="mb-2 text-center text-sm tracking-tight text-slate-500 dark:text-white">
+          <h6 className="mb-2 text-center text-sm tracking-tight text-slate-500 ">
             {dates}
           </h6>
-          <p className="text-sm text-center text-slate-500 dark:text-gray-400">
-            {children}
-          </p>
+          <p className="text-sm text-center text-slate-500 ">{children}</p>
         </>
       )}
     </button>
