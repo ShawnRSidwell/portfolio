@@ -1,4 +1,3 @@
-import Button from "../Button";
 import Email from "./Email";
 
 function Contact() {
