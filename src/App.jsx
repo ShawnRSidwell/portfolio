@@ -5,20 +5,41 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
+import SplashScreen from "./components/SplashScreen";
 import { HeaderProvider } from "./contexts/HeaderContext";
+import { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <HeaderProvider>
-        <Header />
-      </HeaderProvider>
-      <Home />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
+      {isLoading ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <HeaderProvider>
+            <Header />
+          </HeaderProvider>
+          <Fade>
+            <Home />
+            <About />
+            <Projects />
+            <Experience />
+            <Contact />
+            <Footer />
+          </Fade>
+        </>
+      )}
     </>
   );
 }
