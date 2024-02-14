@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { useHeader } from "../../contexts/HeaderContext";
 
-function ScrollLink({ to, offset = -100, children }) {
+function ScrollLink({ to, offset = -100, onClick, children }) {
   const { isSticky } = useHeader();
   return (
     <Link
@@ -12,6 +12,7 @@ function ScrollLink({ to, offset = -100, children }) {
       offset={offset} // Adjust the offset based on your layout
     >
       <button
+        onClick={onClick}
         className={`hover-underline-animation tracking-wider ${
           isSticky ? "text-blue-900" : "text-blue-900"
         }`}

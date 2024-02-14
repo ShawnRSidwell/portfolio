@@ -4,20 +4,22 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 import ScrollLink from "./ScrollLink";
 
-function Navlinks() {
+function Navlinks({ onClick }) {
   return (
     <>
-      <ScrollLink to="home">Home</ScrollLink>
-      <ScrollLink to="about" offset={-100}>
+      <ScrollLink to="home" onClick={onClick}>
+        Home
+      </ScrollLink>
+      <ScrollLink to="about" offset={-100} onClick={onClick}>
         About
       </ScrollLink>
-      <ScrollLink to="projects" offset={-100}>
+      <ScrollLink to="projects" offset={-100} onClick={onClick}>
         Projects
       </ScrollLink>
-      <ScrollLink to="experience" offset={-70}>
+      <ScrollLink to="experience" offset={-70} onClick={onClick}>
         Experience
       </ScrollLink>
-      <ScrollLink to="contact" offset={-100}>
+      <ScrollLink to="contact" offset={-100} onClick={onClick}>
         Contact
       </ScrollLink>
     </>
@@ -60,7 +62,7 @@ function Nav() {
           className="flex flex-col items-center basis-full"
           onClick={toggleNavbar}
         >
-          <Navlinks />
+          <Navlinks onClick={toggleNavbar} />
         </div>
       )}
     </>
