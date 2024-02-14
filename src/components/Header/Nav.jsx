@@ -5,21 +5,43 @@ import { AiOutlineMenu } from "react-icons/ai";
 import ScrollLink from "./ScrollLink";
 
 function Navlinks({ onClick }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleMobile() {
+      setIsMobile(window.innerWidth <= 768);
+    }
+
+    handleMobile();
+
+    window.addEventListener("resize", handleMobile);
+
+    return window.removeEventListener("resize", handleMobile);
+  });
+
   return (
     <>
       <ScrollLink to="home" onClick={onClick}>
         Home
       </ScrollLink>
-      <ScrollLink to="about" offset={-100} onClick={onClick}>
+      <ScrollLink to="about" offset={isMobile ? -200 : -75} onClick={onClick}>
         About
       </ScrollLink>
-      <ScrollLink to="projects" offset={-100} onClick={onClick}>
+      <ScrollLink
+        to="projects"
+        offset={isMobile ? -250 : -100}
+        onClick={onClick}
+      >
         Projects
       </ScrollLink>
-      <ScrollLink to="experience" offset={-70} onClick={onClick}>
+      <ScrollLink
+        to="experience"
+        offset={isMobile ? -225 : -50}
+        onClick={onClick}
+      >
         Experience
       </ScrollLink>
-      <ScrollLink to="contact" offset={-100} onClick={onClick}>
+      <ScrollLink to="contact" offset={isMobile ? 50 : -90} onClick={onClick}>
         Contact
       </ScrollLink>
     </>
