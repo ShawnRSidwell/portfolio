@@ -30,7 +30,7 @@ function App() {
           <HeaderProvider>
             <Header />
           </HeaderProvider>
-          <Slide triggerOnce={true}>
+          <Slide triggerOnce={true} duration={750}>
             <Home />
           </Slide>
           <Fade fraction={0.15} duration={1250}>
