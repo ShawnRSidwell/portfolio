@@ -5,7 +5,7 @@ import { frameworks, languages, tech } from "./skills";
 function About() {
   return (
     <div id="about" className="my-12">
-      <div className="flex flex-col items-center md:flex-row md:justify-center md:bg-gradient-to-r from-blue-500 from-10%  to-blue-800">
+      <div className="flex flex-col items-center md:flex-row md:justify-center md:bg-gradient-to-r from-blue-500 from-10%  bg-[#154482]">
         <div className=" md:p-12">
           <div className="md:flex md:justify-evenly items-center text-slate-500 font-medium bg-white rounded-xl p-3 m-3 md:p-6 md:m-5">
             <img
