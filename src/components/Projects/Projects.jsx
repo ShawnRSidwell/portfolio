@@ -44,7 +44,7 @@ function Projects() {
             </>
           )}
 
-          <div className="grid grid-cols-2 gap-2 px-5">
+          <div className="grid grid-cols-2 gap-2 md:gap-4 px-5 md:px-24 md:mx-5">
             {projectList.map((project, index) => (
               <Button key={project.name} onClick={() => handleClick(project)}>
                 {project.name}
