@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 import optumLogo from "../../assets/optum-logo.jpg";
 import tekSystemsLogo from "../../assets/teksystems-logo.png";
 import wellsfargoLogo from "../../assets/Wells_Fargo_Logo_(2020).svg.png";
@@ -76,7 +78,9 @@ function AccordionItem({
   }
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
       onClick={handleToggle}
       className={`block p-3 md:p-6 m-2 md:m-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 `}
     >
@@ -97,7 +101,7 @@ function AccordionItem({
           <p className="text-sm text-center text-slate-500 ">{children}</p>
         </>
       )}
-    </button>
+    </motion.button>
   );
 }
 
