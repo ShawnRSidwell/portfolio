@@ -1,3 +1,6 @@
+import { HeaderProvider } from "./contexts/HeaderContext";
+import { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -6,9 +9,6 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import SplashScreen from "./components/SplashScreen";
-import { HeaderProvider } from "./contexts/HeaderContext";
-import { useEffect, useState } from "react";
-import { Fade } from "react-awesome-reveal";
 
 function App() {
   const [isLoading, setLoading] = useState(true);
