@@ -1,3 +1,4 @@
+import { motion, AnimatePresence } from "framer-motion";
 import { Bounce } from "react-awesome-reveal";
 import logo from "../assets/Shawn Sidwell Diamond Logo.gif";
 
