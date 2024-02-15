@@ -33,7 +33,7 @@ function App() {
           <Slide triggerOnce={true}>
             <Home />
           </Slide>
-          <Fade fraction={0.15}>
+          <Fade fraction={0.15} duration={1250}>
             <About />
             <Projects />
             <Experience />
