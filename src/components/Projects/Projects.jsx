@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Button from "../Button";
+import { motion } from "framer-motion";
+
 import { projectList } from "./projectList";
+import Button from "../Button";
 import kanbanboard from "../../assets/kanbanboardcropped.png";
 
 function Projects() {
@@ -25,7 +27,7 @@ function Projects() {
                 alt="kanban board"
                 className="w-1/2 md:w-[600px] md:h-[375px] mx-auto rounded-lg  border-2 border-blue-900 shadow-md"
               />
-              <p className="p-6 mb-5 text-center text-slate-500 text-lg ">
+              <p className="p-6 mb-5 text-center text-slate-500 text-lg md:mx-28">
                 My projects makes use of vast variety of latest technology
                 tools. My best experience is to create Data Science projects and
                 deploy them to web applications using cloud infrastructure.
@@ -36,9 +38,9 @@ function Projects() {
               <img
                 src={projSelected.img}
                 alt={projSelected.name}
-                className="w-3/4 md:w-[1200px] md:h-[650px] mx-auto rounded-lg  border-2 border-blue-900 shadow-lg object-scale-down	p-5"
+                className="w-3/4 md:w-[800px] md:h-[400px] mx-auto rounded-lg  border-2 border-blue-900 shadow-lg object-scale-down	p-5"
               />
-              <p className="p-6 mb-5 text-center text-slate-500 text-lg ">
+              <p className="p-6 mb-5 text-center text-slate-500 text-lg md:mx-28">
                 {projSelected.description}
               </p>
             </>
