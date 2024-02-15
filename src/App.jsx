@@ -1,6 +1,6 @@
 import { HeaderProvider } from "./contexts/HeaderContext";
 import { useEffect, useState } from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -30,8 +30,10 @@ function App() {
           <HeaderProvider>
             <Header />
           </HeaderProvider>
-          <Fade>
+          <Slide triggerOnce={true}>
             <Home />
+          </Slide>
+          <Fade fraction={0.15}>
             <About />
             <Projects />
             <Experience />
