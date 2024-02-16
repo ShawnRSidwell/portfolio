@@ -24,7 +24,7 @@ function Projects() {
               key="default"
               initial={{ opacity: 0.5, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.25 }}
             >
               <img
                 src={project}
@@ -48,7 +48,7 @@ function Projects() {
               <img
                 src={projSelected.img}
                 alt={projSelected.name}
-                className="w-3/4 md:w-[800px] md:h-[400px] mx-auto rounded-lg  border-2 border-blue-900 shadow-lg object-scale-down	p-5"
+                className="w-[25em] h-[25dvh] md:w-[800px] md:h-[400px] mx-auto rounded-lg  border-2 border-blue-900 shadow-lg object-scale-down	p-5"
               />
               <p className="p-6 mb-5 text-center text-slate-500 text-lg md:mx-28">
                 {projSelected.description}
