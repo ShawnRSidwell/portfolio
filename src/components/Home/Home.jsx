@@ -9,7 +9,7 @@ function Home() {
     >
       <div className="mx-5 p-5 text-center md:text-left md:w-1/2">
         <h2 className="text-4xl md:text-5xl font-extrabold text-slate-400">
-          Hello, I'm <span className="text-blue-900">Shawn Sidwell</span>
+          Hello, I'm <div className="text-blue-900 md:block">Shawn Sidwell</div>
         </h2>
         <Type />
         <p className="text-lg md:text-xl text-slate-500 mt-4">

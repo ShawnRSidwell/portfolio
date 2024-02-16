@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Fade, Slide } from "react-awesome-reveal";
-
 import { projectList } from "./projectList";
 import Button from "../Button";
-import kanbanboard from "../../assets/kanbanboardcropped.png";
+import project from "../../assets/project-gif.gif";
 
 function Projects() {
   const [projSelected, setProjSelected] = useState(null);
@@ -18,18 +16,18 @@ function Projects() {
     <div id="projects" className="max-w-screen-xl mx-auto mb-12 mt-4 md:py-16">
       <div className="flex flex-col justify-center">
         <div className="flex flex-col justify-center">
-          <h2 className="text-4xl font-extrabold tracking-wider text-center md:py-6 text-blue-900 uppercase">
+          <h2 className="py-2 text-4xl font-extrabold tracking-wider text-center md:py-6 text-blue-900 uppercase">
             Projects
           </h2>
           {!projSelected ? (
             <motion.div
               key="default"
-              initial={{ opacity: 0.5 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0.5, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
               <img
-                src={kanbanboard}
+                src={project}
                 alt="kanban board"
                 className="w-1/2 md:w-[600px] md:h-[375px] mx-auto rounded-lg  border-2 border-blue-900 shadow-md"
               />
@@ -43,8 +41,8 @@ function Projects() {
             <motion.div
               key={projSelected.name}
               layoutId="fadein"
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
+              initial={{ opacity: 0.5, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.25 }}
             >
               <img
