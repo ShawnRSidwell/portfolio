@@ -18,7 +18,7 @@ function About() {
               <h2 className="text-xl md:text-4xl font-extrabold tracking-wider text-center p-2 md:p-5 text-blue-900 uppercase">
                 About Me
               </h2>
-              <div className=" text-center text-lg font-normal  md:mx-auto md:py-5 md:px-9 md:size-3/4 md:text-xl text-slate-500">
+              <div className="text-center text-lg font-normal  md:mx-auto md:py-5 md:px-9 md:size-3/4 md:text-xl text-slate-500">
                 I live in Portland, Oregon and I am a huge dog lover with two
                 hounds at home. My favorite past times are hiking, traveling and
                 coding. I fell in love with programming and dove head first into

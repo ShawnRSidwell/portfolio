@@ -31,10 +31,16 @@ function Projects() {
                 alt="kanban board"
                 className="w-1/2 md:w-[600px] md:h-[375px] mx-auto rounded-lg  border-2 border-blue-900 shadow-md"
               />
-              <p className="p-6 mb-5 text-center text-slate-500 text-lg md:mx-28">
-                My projects makes use of vast variety of latest technology
-                tools. My best experience is to create Data Science projects and
-                deploy them to web applications using cloud infrastructure.
+              <p className="p-6 mb-5 text-center text-slate-500 text-lg  md:max-w-[800px] md:mx-auto">
+                Welcome to my project showcase! Below you'll find a curated
+                selection of projects that highlight my skills, creativity, and
+                expertise. Each project represents a unique challenge I've
+                tackled, showcasing my ability to innovate, problem-solve, and
+                deliver exceptional results. Whether it's web development,
+                graphic design, or data analysis, I'm passionate about bringing
+                ideas to life and exceeding expectations. Take a look at my work
+                and feel free to reach out if you have any questions or would
+                like to collaborate.
               </p>
             </motion.div>
           ) : (
@@ -50,7 +56,7 @@ function Projects() {
                 alt={projSelected.name}
                 className="w-[25em] h-[25dvh] md:w-[800px] md:h-[400px] mx-auto rounded-lg  border-2 border-blue-900 shadow-lg object-scale-down	p-5"
               />
-              <p className="p-6 mb-5 text-center text-slate-500 text-lg md:mx-28">
+              <p className="p-6 mb-5 text-center text-slate-500 text-lg md:max-w-[800px] md:mx-auto">
                 {projSelected.description}
               </p>
             </motion.div>
