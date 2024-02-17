@@ -15,7 +15,7 @@ function Home() {
           Hello, I'm <div className="text-blue-900 md:block">Shawn Sidwell</div>
         </h2>
         <Type />
-        <div className="flex md:py-3">
+        <div className="flex justify-center md:justify-start py-3">
           {socialLinks.map((link, i) => (
             <a
               href={link.name}

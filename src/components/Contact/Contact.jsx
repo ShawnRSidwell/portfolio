@@ -5,7 +5,7 @@ const date = new Date().getFullYear();
 function Contact() {
   return (
     <>
-      <section className="gradientbackground pt-10">
+      <section className="gradientbackground p-3 md:pt-10 flex flex-col justify-center items-center">
         <div
           id="contact"
           className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-white rounded-md md:border-1 md:border-blue-900 shadow-xl"
@@ -24,7 +24,7 @@ function Contact() {
             <Email />
           </div>
         </div>
-        <footer className=" p-2 text-white text-center flex justify-center items-center ">
+        <footer className="p-5 md:p-2 text-white text-center flex justify-center items-center mt-5">
           <div className="text-xs">Created by Shawn Sidwell</div>
           <div className="flex gap-5"></div>
           <div className="text-xs px-5">Copyright &copy; {date}</div>

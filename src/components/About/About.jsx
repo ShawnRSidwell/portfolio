@@ -5,11 +5,11 @@ import { frameworks, languages, tech } from "./skills";
 function About() {
   return (
     <div id="about" className="my-12">
-      <div className="flex flex-col items-center md:flex-row md:justify-center gradientbackground h-screen">
+      <div className="flex flex-col items-center md:flex-row justify-center gradientbackground md:h-screen ">
         <div className=" md:p-12">
           <div className="md:flex md:justify-evenly items-center text-slate-500 font-medium bg-white rounded-xl p-3 m-3 md:p-6 md:m-5">
             <img
-              className="rounded-full shadow-lg mx-auto size-1/2 md:h-96 md:w-96 object-cover md:ml-24 border-2 border-blue-900"
+              className="rounded-full md:rounded-lg shadow-lg mx-auto size-1/2 md:h-96 md:w-96 object-cover md:ml-24 border-blue-900"
               src={profilePic}
               alt="profile picture"
             />
