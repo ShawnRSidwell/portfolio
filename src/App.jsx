@@ -38,7 +38,7 @@ function App() {
             <Projects />
             <Experience />
             <Contact />
-            <Footer />
+            {/* <Footer /> */}
           </Fade>
         </>
       )}
