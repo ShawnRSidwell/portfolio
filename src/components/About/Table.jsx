@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Icon from "../Icon";
 
 function Table({ header, data }) {
@@ -29,9 +30,13 @@ function TableRow({ data }) {
 
 function TableCell({ children }) {
   return (
-    <td className=" flex justify-center items-center bg-white shadow hover:shadow-xl m-1 md:m-3 rounded-full md:p-3 relative">
+    <motion.td
+      whileHover={{ scale: 1.15 }}
+      whileTap={{ scale: 0.9 }}
+      className=" flex justify-center items-center bg-white shadow hover:shadow-xl m-1 md:m-3 rounded-full md:p-3 relative"
+    >
       {children}
-    </td>
+    </motion.td>
   );
 }
 
