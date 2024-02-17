@@ -39,7 +39,7 @@ function Projects() {
                   className="w-1/2 md:w-[600px] md:h-[375px] mx-auto rounded-lg  border-2 border-blue-900 shadow-md"
                 />
               </a>
-              <p className="p-6 mb-5 text-center text-slate-500 text-base  md:max-w-[800px] md:mx-auto">
+              <p className="p-6 mb-5 text-justify text-slate-500 text-base  md:max-w-[800px] md:mx-auto">
                 Welcome to my project showcase! Below you'll find a curated
                 selection of projects that highlight my skills, creativity, and
                 expertise. Each project represents a unique challenge I've
@@ -68,7 +68,7 @@ function Projects() {
                   className="w-[25em] h-[25dvh] md:w-[800px] md:h-[400px] mx-auto rounded-lg  border-2 border-blue-900 shadow-lg object-scale-down	p-5"
                 />
               </a>
-              <p className="p-6 mb-5 text-center text-slate-500 text-base md:max-w-[800px] md:mx-auto">
+              <p className="p-6 mb-5 text-justify text-slate-500 text-base md:max-w-[800px] md:mx-auto">
                 {projSelected.description}
               </p>
             </motion.div>
